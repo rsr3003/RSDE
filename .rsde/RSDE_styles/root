@@ -1,0 +1,13 @@
+! -- Styles - Colors
+#include "~/.rsde/RSDE_styles/color"
+
+! -- Styles - Fonts
+#include "~/.rsde/RSDE_styles/typeface"
+
+! -- Styles - Theme
+#include "~/.rsde/RSDE_styles/theme"
+
+! -- Applications
+! These files map values defined above into specific app settings.
+#include "~/.rsde/RSDE_styles/i3-wm"
+#include "~/.rsde/RSDE_styles/rofi"

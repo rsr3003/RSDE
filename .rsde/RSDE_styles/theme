@@ -1,0 +1,7 @@
+#define icon_theme          Tela-dark
+#define rofi_theme          ~/.rsde/RSDE_styles/rofi.rasi
+
+#define i3wm_window_border_size         1
+#define i3wm_floatingwindow_border_size 1
+#define i3wm_gaps_inner_size            5
+#define i3wm_gaps_outer_size            0
