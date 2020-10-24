@@ -3,7 +3,7 @@
 git clone https://github.com/rsr3003/RSDE.git ~/RSDE && cd ~/RSDE
 echo -e "Downloading the prerequisite packages for RSDE..." &&
 sudo apt update -y && sudo apt upgrade -y &&
-sudo apt install git gnome-flashback xrdp indicator-application build-essential -y &&
+sudo apt install git gnome-flashback xrdp gnome-tweaks indicator-application build-essential -y &&
 echo -e "\n..................................Done.....................................\n\n" &&
 echo -e "Adding the Regolith Linux PPA... As we're gonna use this PPA to install i3-gaps, compton, rofi etc." &&
 sudo add-apt-repository ppa:regolith-linux/release -y &&
