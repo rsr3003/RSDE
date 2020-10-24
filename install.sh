@@ -14,7 +14,7 @@ echo -e "\n..................................Done...............................
 echo -e "Now downloading packages related to xfce4 panel..." &&
 sudo apt install xfce4-panel xfce4-whiskermenu-plugin xfce4-notifyd xfce4-power-manager-plugins xfce4-indicator-plugin -y &&
 echo -e "\n..................................Done.....................................\n\n" &&
-echo -e "\nNow setting up all the configuration files....." && mkdir ~/.config &&
+echo -e "\nNow setting up all the configuration files....." && mkdir ~/.config
 cp .Xresources-RSDE ~/ && cp compton.conf ~/.config/ && cp -r .rsde ~/ && cp -r RSDE ~/.config/ &&
 echo -e "\n..................................Done.....................................\n\n" &&
 echo -e "\nNow setting up RSDE-gnome-flashback....." &&
