@@ -1,5 +1,6 @@
 #! /bin/bash
 
+git clone https://github.com/rsr3003/RSDE.git ~/RSDE && cd ~/RSDE
 echo -e "Downloading the prerequisite packages for RSDE..." &&
 sudo apt update && sudo apt upgrade &&
 sudo apt install git gnome-flashback gnome-tweaks indicator-application gnome-screensaver build-essential -y &&
