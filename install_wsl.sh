@@ -2,11 +2,11 @@
 
 git clone https://github.com/rsr3003/RSDE.git ~/RSDE && cd ~/RSDE
 echo -e "Downloading the prerequisite packages for RSDE..." &&
-sudo apt update && sudo apt upgrade &&
+sudo apt update -y && sudo apt upgrade -y &&
 sudo apt install git gnome-flashback xrdp indicator-application build-essential -y &&
 echo -e "\n..................................Done.....................................\n\n" &&
 echo -e "Adding the Regolith Linux PPA... As we're gonna use this PPA to install i3-gaps, compton, rofi etc." &&
-sudo add-apt-repository ppa:regolith-linux/release &&
+sudo add-apt-repository ppa:regolith-linux/release -y &&
 echo -e "\n..................................PPA Added.....................................\n\n" &&
 echo -e "Now downloading i3 related packages..." &&
 sudo apt install i3-gaps rofi compton fonts-source-code-pro-ttf -y && sudo apt purge --autoremove dunst i3lock i3status -y &&
