@@ -18,7 +18,7 @@ echo -e "\nNow setting up all the configuration files....." && mkdir ~/.config &
 cp .Xresources-RSDE ~/ && cp compton.conf ~/.config/ && cp -r .rsde ~/ && cp -r RSDE ~/.config/ &&
 echo -e "\n..................................Done.....................................\n\n" &&
 echo -e "\nNow setting up RSDE-gnome-flashback....." &&
-git clone https://github.com/rsr3003/RSDE-gnome-flashback.git ~/.RSDE-flashback && cd ~/.RSDE-flashback && sudo make install && cd &&
+git clone https://github.com/rsr3003/RSDE-gnome-flashback.git ~/.RSDE-flashback && cd ~/.RSDE-flashback && sudo make install && cd ~/RSDE &&
 echo -e "\n..................................Done.....................................\n" &&
 echo -e "\nNow configuring some required settings for RSDE to run properly"
 DESKTOP=$(gsettings get org.gnome.gnome-flashback desktop)

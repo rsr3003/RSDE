@@ -18,7 +18,7 @@ echo -e "\nNow setting up all the configuration files....." && mkdir ~/.config &
 cp .Xresources-RSDE ~/ && cp compton.conf ~/.config/ && cp -r .rsde ~/ && cp -r RSDE ~/.config/ &&
 echo -e "\n..................................Done.....................................\n\n" &&
 echo -e "\nNow setting up RSDE-gnome-flashback....." &&
-git clone https://github.com/rsr3003/RSDE-gnome-flashback.git ~/.RSDE-flashback && cd ~/.RSDE-flashback && sudo make install && cd &&
+git clone https://github.com/rsr3003/RSDE-gnome-flashback.git ~/.RSDE-flashback && cd ~/.RSDE-flashback && sudo make install && cd ~/RSDE &&
 echo -e "\n..................................Done.....................................\n" &&
 echo -e "\nNow configuring some required settings for RSDE to run properly"
 DESKTOP=$(gsettings get org.gnome.gnome-flashback desktop)
@@ -32,10 +32,10 @@ gsettings set org.gnome.gnome-flashback desktop false && gsettings set org.gnome
 echo -e "\nNow Installing & applying the the default gtk & icon theme you can apply them later"
 sudo apt install materia-gtk-theme papirus-icon-theme -y
 echo -e "\nSetting up XRDP"
-sudo cp /etc/xrdp/xrdb.ini /etc/xrdp/xrdp-backup.ini &&
+sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp-backup.ini &&
 sudo sed -i 's/max_bpp=32/#max_bpp=32\nmax_bpp=128/g' /etc/xrdp/xrdp.ini
 sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.ini
-sudo cp startwm.sh /etc/xrdp/
+sudo cp ~/RSDE/startwm.sh /etc/xrdp/
 echo -e "\n...........................RSDE is ready to go.............................\n" &&
 echo -e "\n...........Start xRDP service by \"sudo /etc/init.d/xrdp start\"...........\n"
 echo -e "\n.......Open \"Remote Desktop Connection\" from Windows & connect to \"localhost:3390\"......\n"
